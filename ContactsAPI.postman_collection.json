@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "6fa51519-6340-4202-8ee0-c472d71a750f",
+		"name": "ContactsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8478365"
+	},
+	"item": [
+		{
+			"name": "CreateContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njk3ZWEwMWQ1MmFlNDAwMTM5N2RhYjEiLCJpYXQiOjE3MjEyMzE4NzN9.JiZdrXjZ_pBPtIQ2Q4oy12Ll8LJdJopjN8RBo0nu_nQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Doe\",\r\n    \"birthdate\": \"1970-01-01\",\r\n    \"email\": \"jdoe@fake.com\",\r\n    \"phone\": \"8005555555\",\r\n    \"street1\": \"1 Main St.\",\r\n    \"street2\": \"Apartment A\",\r\n    \"city\": \"Anytown\",\r\n    \"stateProvince\": \"KS\",\r\n    \"postalCode\": \"12345\",\r\n    \"country\": \"USA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestAuthenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllContact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njk3ZWEwMWQ1MmFlNDAwMTM5N2RhYjEiLCJpYXQiOjE3MjEyMzE4NzN9.JiZdrXjZ_pBPtIQ2Q4oy12Ll8LJdJopjN8RBo0nu_nQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSpecificContact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njk3ZWEwMWQ1MmFlNDAwMTM5N2RhYjEiLCJpYXQiOjE3MjEyMzE4NzN9.JiZdrXjZ_pBPtIQ2Q4oy12Ll8LJdJopjN8RBo0nu_nQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/6697ea33d52ae4001397dab5",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						"6697ea33d52ae4001397dab5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njk3ZWEwMWQ1MmFlNDAwMTM5N2RhYjEiLCJpYXQiOjE3MjEyMzE4NzN9.JiZdrXjZ_pBPtIQ2Q4oy12Ll8LJdJopjN8RBo0nu_nQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Jonty\",\r\n    \"lastName\": \"Rohdes\",\r\n    \"birthdate\": \"1971-01-01\",\r\n    \"email\": \"jdoe@fake.com\",\r\n    \"phone\": \"8505555555\",\r\n    \"street1\": \"2 Main St.\",\r\n    \"street2\": \"Apartment Z\",\r\n    \"city\": \"Swedon\",\r\n    \"stateProvince\": \"UK\",\r\n    \"postalCode\": \"580031\",\r\n    \"country\": \"CANNADA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/6697ec253155840013ce9686",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						"6697ec253155840013ce9686"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njk3ZWEwMWQ1MmFlNDAwMTM5N2RhYjEiLCJpYXQiOjE3MjEyMzE4NzN9.JiZdrXjZ_pBPtIQ2Q4oy12Ll8LJdJopjN8RBo0nu_nQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Anna\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/6697ea33d52ae4001397dab5",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						"6697ea33d52ae4001397dab5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
